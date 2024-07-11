@@ -17,7 +17,6 @@ wp.blocks.registerBlockType("ourplugin/featured-professor", {
 })
 
 function EditComponent(props) {
-    // wp.data.select("core").getEntityRecords("postType", "professor", {per_page: -1})
     const allProfs = useSelect(select => {
         return select("core").getEntityRecords("postType", "professor", {per_page: -1})
     });
